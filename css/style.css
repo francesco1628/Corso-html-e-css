@@ -1,0 +1,171 @@
+/* custom variable */
+:root {
+    --main-color: rgba(51, 166, 166, 0.76);
+    --secondary-color: rgba(3, 28, 38, 0.7);
+    --main-bg-color: rgba(246, 128, 16, 1);
+    --primary-text-color:rgba(255, 255, 255, 1);
+    --secondary-text-color:rgba(3, 28, 38, 1);
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: var(--main-color);
+}
+._col-2 {
+    width: calc(90% / 2);
+    padding: 1rem;
+    height: 100%;
+}
+
+._padding-0 {
+    padding: 0 !important;
+}
+
+._main-btn {
+    background-color: var(--main-bg-color);
+    padding: .8rem 1.6rem;
+    border-radius: .7rem;
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    font-weight: bold;
+}
+
+/* header */
+header {
+    height: 100px;
+}
+nav {
+    height: 100%;
+    background-color: var(--secondary-color);
+}
+._heigh-100 {
+    height: 100%;
+}
+
+._nav-img {
+    background-color: gray;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 10px 0;
+}
+
+._list-nav {
+   padding: 0;
+}
+
+._list-nav li {
+    padding: 0 10px;
+}
+
+._nav-btn{
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+
+/* /header */
+
+/* main */
+
+/* hero */
+#hero {
+    background-color: var(--secondary-color);
+    padding: 4rem 0;
+}
+
+._hero-title {
+    color: var(--primary-text-color);
+    padding: .8rem 0;
+    padding-bottom: 2rem !important;
+    letter-spacing: .1rem;
+}
+
+._hero-p {
+    color: var(--primary-text-color);
+    font-size: 1rem;
+    padding-bottom: 3rem;
+}
+
+._hero-img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-color: grey;
+    border-radius: 50%;
+    object-fit: cover;
+}
+/* /hero */
+
+/* cv */
+._row-cv {
+    padding: 5rem 0;
+}
+
+._cv-img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-color: grey;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+._cv-title {
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+._cv-p {
+    color: var(--secondary-color);
+    font-size: .8rem;
+    padding-bottom: 3rem;
+}
+/* /cv */
+
+/* skills */
+#skills {
+    background-color: var(--secondary-color);
+}
+
+._skills-col {
+    width: 100%;
+    color: var(--primary-text-color);
+    text-align: center;
+}
+
+._skills-title {
+    padding-bottom: 3rem
+}
+
+._skills-li-img {
+    width: 100px;
+    aspect-ratio: 1/1;
+    background-color: grey;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5rem
+}
+
+._skills-h3{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+._skills-p {
+    font-size: .8rem;
+}
+/* /skills */
+
+/* /main */
