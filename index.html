@@ -6,8 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FrancescoPiazzolla</title>
 
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
     <!-- style -->
     <link rel="stylesheet" href="css/style.css">
@@ -15,9 +25,9 @@
 
 <body>
     <header>
-        <nav>
+        <nav class="_d-nav-lg">
             <div class="container _heigh-100">
-                <div class="d-flex flex-row justify-content-between align-items-center _heigh-100">
+                <div class="d-flex flex-row justify-content-between align-items-center">
                     <div class="_col-2">
                         <img class="_nav-img" src="" alt="">
                     </div>
@@ -25,33 +35,63 @@
                     <div class="_col-2">
                         <ul class="d-flex flex-row justify-content-between _list-nav">
                             <li>
-                                <a class="_nav-btn" href="">Chi sono</a>
+                                <a class="_nav-btn" href="#cv">Chi sono</a>
                             </li>
                             <li>
-                                <a class="_nav-btn" href="">Progetti</a>
+                                <a class="_nav-btn" href="#projects">Progetti</a>
                             </li>
                             <li>
-                                <a class="_nav-btn" href="">Contatti</a>
+                                <a class="_nav-btn" href="#footer">Contatti</a>
                             </li>
                         </ul>
                     </div>
-
                 </div>
             </div>
         </nav>
+
+        <nav class="navbar _d-nav-sm">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img class="_nav-img" src="" alt="">
+            </a>
+              <button class="navbar-toggler _toggler-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#cv">Chi sono</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#projects">Progetti</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#footer">Contatti</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <main>
         <section id="hero">
-            <div class="container">
-                <div class="d-flex justify-content-between">
-                    <div class="_col-2"> 
+            <div class="container _container-sm">
+                <div class="d-flex justify-content-between _hero-wrap">
+                    <div class="_col-2">
                         <h1 class="_hero-title">
-                            Ciao, sono Francesco UX/UI Designer 
+                            Ciao, sono Francesco UX/UI Designer
                         </h1>
 
                         <p class="_hero-p">
-                            Creo esperienze digitali che non solo sono belle da vedere, ma anche incredibilmente facili e piacevoli da usare. Il mio obiettivo è rendere ogni interazione un'esperienza memorabile.
+                            Creo esperienze digitali che non solo sono belle da vedere, ma anche incredibilmente facili
+                            e piacevoli da usare. Il mio obiettivo è rendere ogni interazione un'esperienza memorabile.
                         </p>
 
                         <a class="_main-btn" href="">Guarda i miei progetti</a>
@@ -65,29 +105,33 @@
         </section>
 
         <section id="cv">
-            <div class="container">
+            <div class="container _container-sm">
                 <div class="d-flex justify-content-between _row-cv">
                     <div class="_col-2 _padding-0">
                         <img class="_cv-img" src="" alt="">
                     </div>
 
-                    <div class="_col-2"> 
+                    <div class="_col-2">
                         <h2 class="_cv-title pb-4">
                             Chi sono
                         </h2>
 
                         <p class="_cv-p">
                             <span class="d-block pb-3">
-                                Ciao, sono Francesco, e la mia passione è trasformare le complessità del mondo digitale in esperienze utente semplici e intuitive. 
+                                Ciao, sono Francesco, e la mia passione è trasformare le complessità del mondo digitale
+                                in esperienze utente semplici e intuitive. 
                             </span>
 
                             <span class="d-block pb-3">
-                                Come UX/UI designer, mi impegno a trasformare idee in prodotti digitali che migliorino la vita delle persone, creando esperienze utente intuitive e coinvolgenti.
+                                Come UX/UI designer, mi impegno a trasformare idee in prodotti digitali che migliorino
+                                la vita delle persone, creando esperienze utente intuitive e coinvolgenti.
 
                             </span>
 
                             <span class="d-block">
-                                Il mio approccio è incentrato sull'utente, e combino creatività, usabilità e accessibilità per raggiungere questo obiettivo. Amo lavorare in team e la mia curiosità mi spinge a rimanere sempre aggiornato e pronto ad affrontare nuove sfide.
+                                Il mio approccio è incentrato sull'utente, e combino creatività, usabilità e
+                                accessibilità per raggiungere questo obiettivo. Amo lavorare in team e la mia curiosità
+                                mi spinge a rimanere sempre aggiornato e pronto ad affrontare nuove sfide.
                             </span>
                         </p>
 
@@ -98,50 +142,154 @@
         </section>
 
         <section id="skills">
-            <div class="container">
+            <div class="container _container-sm">
                 <div class="d-flex flex-column justify-content-between py-5">
                     <div class="_skills-col">
                         <h2 class="_skills-title">Le mie skill</h2>
                     </div>
 
-                    <div class="_skills-col pb-5"> 
-                        <ul class="d-flex flex-row justify-content-between">
+                    <div class="_skills-col pb-5">
+                        <ul class="d-flex flex-row justify-content-between _skills-list">
                             <li>
                                 <img class="_skills-li-img" src="" alt="">
-                                <h3 class="_skills-h3">100%</h3>
-                                <p class="_skills-p">Figma</p>
-                            </li>
-                            <li>
-                                <img class="_skills-li-img" src="" alt="">
-                                <h3 class="_skills-h3">100%</h3>
-                                <p class="_skills-p">Illustrator</p>
+                                <h3 class="_skills-h3">90%</h3>
+                                <p class="_skills-p">Graphic Design</p>
                             </li>
                             <li>
                                 <img class="_skills-li-img" src="" alt="">
                                 <h3 class="_skills-h3">80%</h3>
-                                <p class="_skills-p">Photoshop</p>
+                                <p class="_skills-p">User Research</p>
                             </li>
                             <li>
                                 <img class="_skills-li-img" src="" alt="">
-                                <h3 class="_skills-h3">75%</h3>
-                                <p class="_skills-p">InDesign</p>
+                                <h3 class="_skills-h3">85%</h3>
+                                <p class="_skills-p">Wireframing</p>
                             </li>
                             <li>
                                 <img class="_skills-li-img" src="" alt="">
-                                <h3 class="_skills-h3">60%</h3>
-                                <p class="_skills-p">HTML</p>
+                                <h3 class="_skills-h3">85%</h3>
+                                <p class="_skills-p">User Interface</p>
                             </li>
                             <li>
                                 <img class="_skills-li-img" src="" alt="">
-                                <h3 class="_skills-h3">60%</h3>
-                                <p class="_skills-p">CSS</p>
+                                <h3 class="_skills-h3">90%</h3>
+                                <p class="_skills-p">Prototyping</p>
+                            </li>
+                            <li>
+                                <img class="_skills-li-img" src="" alt="">
+                                <h3 class="_skills-h3">80%</h3>
+                                <p class="_skills-p">User Test</p>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section id="projects">
+            <div class="container _container-sm">
+                <div class="d-flex flex-column py-5">
+                    <div>
+                        <h2 class="_projects-title">I miei progetti</h2>
+                    </div>
+
+                    <div class="d-flex justify-content-between flex-row flex-wrap _wrap-projects">
+                        <div class="_card-projects">
+                            <img class="_card-projects-img" src="" alt="">
+                            <h4>Progetto Finale</h4>
+                            <p>Analisi as is, UX Research, user personas and user journey. Case study iVegan.</p>
+                            <a class="_main-btn" href="">Visualizza il progetto</a>
+                        </div>
+
+                        <div class="_card-projects">
+                            <img class="_card-projects-img" src="" alt="">
+                            <h4>Progetto Finale</h4>
+                            <p>Analisi as is, UX Research, user personas and user journey. Case study iVegan.</p>
+                            <a class="_main-btn" href="">Visualizza il progetto</a>
+                        </div>
+
+                        <div class="_card-projects">
+                            <img class="_card-projects-img" src="" alt="">
+                            <h4>Progetto Finale</h4>
+                            <p>Analisi as is, UX Research, user personas and user journey. Case study iVegan.</p>
+                            <a class="_main-btn" href="">Visualizza il progetto</a>
+                        </div>
+
+                        <div class="_card-projects">
+                            <img class="_card-projects-img" src="" alt="">
+                            <h4>Progetto Finale</h4>
+                            <p>Analisi as is, UX Research, user personas and user journey. Case study iVegan.</p>
+                            <a class="_main-btn" href="">Visualizza il progetto</a>
+                        </div>
+
+                        <div class="_card-projects">
+                            <img class="_card-projects-img" src="" alt="">
+                            <h4>Progetto Finale</h4>
+                            <p>Analisi as is, UX Research, user personas and user journey. Case study iVegan.</p>
+                            <a class="_main-btn" href="">Visualizza il progetto</a>
+                        </div>
+
+                        <div class="_card-projects">
+                            <img class="_card-projects-img" src="" alt="">
+                            <h4>Progetto Finale</h4>
+                            <p>Analisi as is, UX Research, user personas and user journey. Case study iVegan.</p>
+                            <a class="_main-btn" href="">Visualizza il progetto</a>
+                        </div>
+
+                        <div class="_card-projects">
+                            <img class="_card-projects-img" src="" alt="">
+                            <h4>Progetto Finale</h4>
+                            <p>Analisi as is, UX Research, user personas and user journey. Case study iVegan.</p>
+                            <a class="_main-btn" href="">Visualizza il progetto</a>
+                        </div>
+
+                        <div class="_card-projects">
+                            <img class="_card-projects-img" src="" alt="">
+                            <h4>Progetto Finale</h4>
+                            <p>Analisi as is, UX Research, user personas and user journey. Case study iVegan.</p>
+                            <a class="_main-btn" href="">Visualizza il progetto</a>
+                        </div>
+
+                        <div class="_card-projects">
+                            <img class="_card-projects-img" src="" alt="">
+                            <h4>Progetto Finale</h4>
+                            <p>Analisi as is, UX Research, user personas and user journey. Case study iVegan.</p>
+                            <a class="_main-btn" href="">Visualizza il progetto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="m-0" id="footer"> 
+        <div class="container _container-sm">
+            <div class="d-flex flex-column justify-content-between">
+                <div class="d-flex justify-content-between _footer-top">
+                    <div class="_footer-col">
+                        <h3 class="_footer-col-h3">Lavoriamo insieme</h3>
+                        <p class="_footer-col-p">Sei alla ricerca di un UX/UI designer che possa dare vita alle tue visioni digitali? Sono pronto a mettere la mia esperienza al servizio dei tuoi progetti. Scopri come possiamo creare interfacce intuitive e coinvolgenti. Contattami ora!</p>
+                        <ul class="_footer-col-ul">
+                            <a class="_footer-col-btn" href=""><i class="fa-brands fa-linkedin"></i></a>
+                            <a class="_footer-col-btn" href=""><i class="fa-brands fa-github"></i></a>
+                        </ul>
+                    </div>
+
+                    <div class="_footer-col">
+                        form
+                    </div>
+                </div>
+
+                <hr class="m-0">
+    
+                <div class="_footer-bottom">
+                    All rights reserved to Francesco Piazzolla
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 
 </html>
