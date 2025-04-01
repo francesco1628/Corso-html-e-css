@@ -1,0 +1,191 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color:#031C26;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+aside.sidebar {
+    background-color: #215258; /* Green color from the image */
+    color: #fff;
+    padding: 30px;
+    width: 300px;
+}
+
+aside.sidebar .profile {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+aside.sidebar .profile img {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+aside.sidebar h3 {
+    font-size: 1.2em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #63BBBB;
+    padding-bottom: 5px;
+    color: #63BBBB;
+}
+
+.sidebar .contacts ul, .sidebar .skills ul {
+    list-style-type: disc;
+    padding: 0;
+    margin: 0;
+}
+
+aside.sidebar .contacts li {
+    list-style-type: none;
+}
+
+.marker-list {
+    font-size: 2rem;
+}
+
+aside.sidebar .contacts li, aside.sidebar .skills li {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    height: 35px;
+}
+
+aside.sidebar .contacts li i {
+    margin-right: 10px;
+    color: white;
+}
+
+aside.sidebar .contacts li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+aside.sidebar .education .item {
+    margin-bottom: 20px;
+}
+
+aside.sidebar .education h4 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+aside.sidebar .education p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+main.main-content {
+    padding: 30px;
+    margin-top: 30px;
+}
+h1{
+color: #215258;
+margin-bottom: 2px;
+font-size: 48px;
+}
+
+h2{
+color: #031C26;
+margin-top: 2px;
+margin-bottom: 100px;
+font-weight: 100;
+
+}
+
+main.main-content h3 {
+    font-size: 1.4em;
+    margin-top: 0;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #215258;
+    padding-bottom: 5px;
+    color: #215258; /* Green color from the image */
+}
+
+main.main-content .profile-text p {
+    margin-bottom: 30px;
+    color: #031C26;
+}
+
+main.main-content .experience .item {
+    margin-bottom: 30px;
+}
+
+main.main-content .experience h4 {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #215258;
+    font-size: 1.1rem;
+}
+
+main.main-content .experience p {
+    margin: 0 0 5px 0;
+    font-size: 0.95em;
+    color: #031C26;
+}
+
+main.main-content .experience ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+main.main-content .experience li {
+    font-size: 0.95em;
+    color: #031C26;
+    margin-bottom: 5px;
+}
+
+main.main-content .languages ul {
+    list-style: none;
+    padding: 0;
+}
+
+main.main-content .languages li {
+    margin-bottom: 10px;
+    font-size: 0.95em;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+    font-size: 0.8em;
+    color: #031C26;
+}
+
+/* Placeholder for icons - you'll need to add your icon library or use images */
+.icon {
+    display: inline-block;
+    width: 1em;
+    margin-right: 0.5em;
+    font-size: 1em; /* Adjust as needed */
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    aside.sidebar {
+        width: 100%;
+        padding: 20px;
+    }
+    main.main-content {
+        padding: 20px;
+    }
+}
