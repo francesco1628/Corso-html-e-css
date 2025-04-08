@@ -609,7 +609,7 @@ ul {
     }
 
     ._card-projects {
-        width: calc(90% / 3) !important;
+        width: calc(90% / 2) !important;
         padding: 1rem;
     }
 
@@ -622,7 +622,7 @@ ul {
     }
 
     ._card-projects-img {
-        height: 180px;
+        height: 150px;
         aspect-ratio: 1/1;
     }
 
@@ -641,6 +641,10 @@ ul {
 }
 
 @media (min-width: 1024px) {
+    ._card-projects {
+        width: calc(90% / 3) !important;
+        padding: 1rem;
+    }
     ._card-projects h4 {
         font-size: 1.5rem;
     }
@@ -648,6 +652,10 @@ ul {
     ._card-projects p {
         font-size: 1.2rem;
         padding-right: 2rem;
+    }
+
+    ._card-projects-img {
+        height: 180px;
     }
 }
 /* /projects */
